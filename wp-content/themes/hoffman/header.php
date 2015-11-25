@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<?php $URL_WEBSITE = getenv('OPENSHIFT_ENV_VAR') ? getenv('OPENSHIFT_ENV_VAR') : 'http://127.0.0.1:8000/'; ?>
 <html class="no-js" <?php language_attributes(); ?>>
 
 	<head profile="http://gmpg.org/xfn/11">
@@ -8,10 +8,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
 
 		<title><?php wp_title('|', true, 'right'); ?></title>
-
 		<?php wp_head(); ?>
-		<link rel="stylesheet" href="http://127.0.0.1:8000/static/css/vendor.css" media="screen" />
-		<link href="http://127.0.0.1:8000/static/css/screen.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="<?=$URL_WEBSITE?>static/css/vendor.css" media="screen" />
+		<link href="<?=$URL_WEBSITE?>static/css/screen.css" rel="stylesheet" type="text/css" />
 	</head>
 
 	<body <?php body_class(); ?>>

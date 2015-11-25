@@ -1,3 +1,4 @@
+<?php $URL_WEBSITE = getenv('OPENSHIFT_ENV_VAR') ? getenv('OPENSHIFT_ENV_VAR') : 'http://127.0.0.1:8000/'; ?>
 <footer data-ui-view="footer-view" class="ng-scope">
 <div id="footer-head" class="ng-scope">
 	<div class="container text-right">
@@ -11,25 +12,25 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-6">
 						<ul>
-							<li><h5><a href="/nosotros" data-ui-sref="app.nosotros" title="About us" data-translate="menu.whoweare" class="ng-scope">¿Quiénes Somos?</a></h5></li>
-							<li><h5><a href="/nosotros/nuestro-equipo" data-ui-sref="app.nosotros.nuestroequipo" title="Our team" data-translate="menu.team" class="ng-scope">Nuestro Equipo</a></h5></li>
+							<li><h5><a href="<?=$URL_WEBSITE?>nosotros" data-ui-sref="app.nosotros" title="About us" data-translate="menu.whoweare" class="ng-scope">¿Quiénes Somos?</a></h5></li>
+							<li><h5><a href="<?=$URL_WEBSITE?>nosotros/nuestro-equipo" data-ui-sref="app.nosotros.nuestroequipo" title="Our team" data-translate="menu.team" class="ng-scope">Nuestro Equipo</a></h5></li>
 						</ul>
 					</div>
 					<div class="col-xs-12 col-sm-6">
 						<ul>
-							<li><h5><a href="/que-hacemos" data-ui-sref="app.quehacemos" title="What we do" data-translate="menu.whatwedo" class="ng-scope">¿Qué hacemos?</a></h5></li>
-							<li><h5><a href="/que-hacemos/campo-accion" data-ui-sref="app.quehacemos.campoaccion" title="Our practice" data-translate="menu.practice" class="ng-scope">Áreas de Práctica</a></h5></li>
+							<li><h5><a href="<?=$URL_WEBSITE?>que-hacemos" data-ui-sref="app.quehacemos" title="What we do" data-translate="menu.whatwedo" class="ng-scope">¿Qué hacemos?</a></h5></li>
+							<li><h5><a href="<?=$URL_WEBSITE?>que-hacemos/campo-accion" data-ui-sref="app.quehacemos.campoaccion" title="Our practice" data-translate="menu.practice" class="ng-scope">Áreas de Práctica</a></h5></li>
 						</ul>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-xs-12 col-sm-12">
-						<div class="brochure ng-scope" data-translate="docs.brochure"><a href="/static/docs/VGA_DocumentoPerfil-Esp-01.pdf" target="_blank" class="custom_submit"><span>Descargar Brochure Corporativo</span><i></i></a></div>
+						<div class="brochure ng-scope" data-translate="docs.brochure"><a href="<?=$URL_WEBSITE?>static/docs/VGA_DocumentoPerfil-Esp-01.pdf" target="_blank" class="custom_submit"><span>Descargar Brochure Corporativo</span><i></i></a></div>
 					</div>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-8">
-				<h5><a href="/contacto" data-ui-sref="app.contacto" title="Contact" data-translate="menu.contact" class="ng-scope">Contacto</a></h5>
+				<h5><a href="<?=$URL_WEBSITE?>contacto" data-ui-sref="app.contacto" title="Contact" data-translate="menu.contact" class="ng-scope">Contacto</a></h5>
 				<div class="row footer-text">
 					<div class="col-xs-12 col-sm-4">
 						<h6>Tijuana</h6>

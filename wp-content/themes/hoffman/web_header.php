@@ -1,3 +1,4 @@
+<?php $URL_WEBSITE = getenv('OPENSHIFT_ENV_VAR') ? getenv('OPENSHIFT_ENV_VAR') : 'http://127.0.0.1:8000/'; ?>
 <header id="header" data-ui-view="header-view" class="ng-scope"><nav class="navbar navbar-default ng-scope" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -12,10 +13,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" data-ng-class="!navCollapsed &amp;&amp; 'in'" data-ng-click="navCollapsed=true">
             <ul class="nav navbar-nav">
-				<li><a href="/inicio" data-ui-sref="app.inicio" data-ui-sref-active="active" data-translate="menu.home" class="ng-scope active">Inicio</a></li>
-				<li><a href="/nosotros" data-ui-sref="app.nosotros" data-ui-sref-active="active" data-translate="menu.aboutus" class="ng-scope">¿Quiénes Somos?</a></li>
-				<li><a href="/que-hacemos" data-ui-sref="app.quehacemos" data-ui-sref-active="active" data-translate="menu.whatwedo" class="ng-scope">¿Qué hacemos?</a></li>
-                <li><a href="/contacto" data-ui-sref="app.contacto" data-ui-sref-active="active" data-translate="menu.contact" class="ng-scope">Contacto</a></li>
+				<li><a href="<?=$URL_WEBSITE?>inicio" data-ui-sref="app.inicio" data-ui-sref-active="active" data-translate="menu.home" class="ng-scope active">Inicio</a></li>
+				<li><a href="<?=$URL_WEBSITE?>nosotros" data-ui-sref="app.nosotros" data-ui-sref-active="active" data-translate="menu.aboutus" class="ng-scope">¿Quiénes Somos?</a></li>
+				<li><a href="<?=$URL_WEBSITE?>que-hacemos" data-ui-sref="app.quehacemos" data-ui-sref-active="active" data-translate="menu.whatwedo" class="ng-scope">¿Qué hacemos?</a></li>
+                <li><a href="<?=$URL_WEBSITE?>contacto" data-ui-sref="app.contacto" data-ui-sref-active="active" data-translate="menu.contact" class="ng-scope">Contacto</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
         <div id="header-tools">
