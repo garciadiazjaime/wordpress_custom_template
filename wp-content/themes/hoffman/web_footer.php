@@ -1,4 +1,4 @@
-<?php $URL_WEBSITE = getenv('OPENSHIFT_ENV_VAR') ? getenv('OPENSHIFT_ENV_VAR') : 'http://127.0.0.1:8000/'; ?>
+<?php $URL_WEBSITE = getenv('URL_WEBSITE') ? getenv('URL_WEBSITE') : 'http://127.0.0.1:8000/'; ?>
 <footer data-ui-view="footer-view" class="ng-scope">
 <div id="footer-head" class="ng-scope">
 	<div class="container text-right">

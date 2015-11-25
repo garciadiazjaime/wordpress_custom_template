@@ -1,4 +1,4 @@
-<?php $URL_WEBSITE = getenv('OPENSHIFT_ENV_VAR') ? getenv('OPENSHIFT_ENV_VAR') : 'http://127.0.0.1:8000/'; ?>
+<?php $URL_WEBSITE = getenv('URL_WEBSITE') ? getenv('URL_WEBSITE') : 'http://127.0.0.1:8000/'; ?>
 <header id="header" data-ui-view="header-view" class="ng-scope"><nav class="navbar navbar-default ng-scope" role="navigation">
     <div class="container">
         <div class="navbar-header">

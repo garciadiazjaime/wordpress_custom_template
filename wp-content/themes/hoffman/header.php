@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php $URL_WEBSITE = getenv('OPENSHIFT_ENV_VAR') ? getenv('OPENSHIFT_ENV_VAR') : 'http://127.0.0.1:8000/'; ?>
+<?php $URL_WEBSITE = getenv('URL_WEBSITE') ? getenv('URL_WEBSITE') : 'http://127.0.0.1:8000/'; ?>
 <html class="no-js" <?php language_attributes(); ?>>
 
 	<head profile="http://gmpg.org/xfn/11">
