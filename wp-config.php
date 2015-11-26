@@ -37,6 +37,10 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
+if(getenv('OPENSHIFT_DATA_DIR')){
+	define( 'UPLOADS', getenv('OPENSHIFT_DATA_DIR') + '/wp-content/uploads' );
+}
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
