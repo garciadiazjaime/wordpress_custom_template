@@ -38,7 +38,6 @@ define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 
 if(getenv('OPENSHIFT_DATA_DIR')){
-	echo "=========HERE=========";
 	define('UPLOADS', getenv('OPENSHIFT_DATA_DIR'));
 }
 
