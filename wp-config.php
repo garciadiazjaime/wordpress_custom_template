@@ -38,7 +38,7 @@ define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 
 if(getenv('OPENSHIFT_DATA_DIR')){
-	define('UPLOADS', '/var/lib/openshift/56552a747628e163f8000062/app-root/data/wp-content/uploads');
+	define('UPLOADS', '../data/wp-content/uploads');
 }
 
 /**#@+
