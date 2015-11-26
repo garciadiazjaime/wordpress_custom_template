@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="content" data-test="<?=getenv('OPENSHIFT_DATA_DIR')?>">
+<div class="content">
 
 	<?php if (have_posts()) : ?>
 
