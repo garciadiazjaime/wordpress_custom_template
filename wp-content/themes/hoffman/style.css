@@ -40,7 +40,6 @@
 /*	0. CSS Reset
 /* -------------------------------------------------------------------------------- */
 
-
 html, body { margin:0; padding:0;}
 
 h1, h2, h3, h4, h5, h6, p, blockquote, address, big, cite, code, em, font, img, small, strike, sub, sup, li, ol, ul, fieldset, form, label, legend, button, table, caption, tr, th, td {
@@ -3044,4 +3043,11 @@ img#wpstats { display: none !important; } /* silly wp stats */
 
 	.archive-nav span { display: none; }
 
+}
+
+
+/* OVERWRITE CUSTOM ----------------------------------- */
+
+h1, h2, h3 {
+	padding: inherit !important;
 }

@@ -2,7 +2,7 @@
 <footer data-ui-view="footer-view" class="ng-scope">
 <div id="footer-head" class="ng-scope">
 	<div class="container text-right">
-		<p><span class="hidden">Vega</span> <span data-translate="string.c" class="ng-scope">abogados</span></p>
+		<p><span class="hidden">Vega</span> <span data-translate="string.c" class="ng-scope pull-right">abogados</span></p>
 	</div>
 </div>
 <div id="footer-main" class="ng-scope">
